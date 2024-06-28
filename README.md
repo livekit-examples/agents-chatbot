@@ -9,9 +9,12 @@
 
 ## Run the NextJS app
 
+NOTE: if you run into issues running `pnpm` commands because of a version mismatch, run the following first:
+`export COREPACK_ENABLE_STRICT=0`
+
 1. `cd client`
 2. `cp .env.example .env.local`
 3. populate real values in `.env.local`
-4. `pnpm i`
+4. `pnpm i` 
 5. `pnpm dev`
 6. navigate to `localhost:3000`
