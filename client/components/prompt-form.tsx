@@ -17,7 +17,11 @@ import {
 import { useEnterSubmit } from '@/lib/hooks/use-enter-submit'
 import { nanoid } from 'nanoid'
 import { useRouter } from 'next/navigation'
-import { useRoomContext, useChat } from '@livekit/components-react'
+import {
+  useRoomContext,
+  useChat,
+  useConnectionState
+} from '@livekit/components-react'
 
 export function PromptForm({
   input,
@@ -93,7 +97,7 @@ export function PromptForm({
           ref={inputRef}
           tabIndex={0}
           onKeyDown={onKeyDown}
-          placeholder="Send a message."
+          placeholder={room.state}
           className="min-h-[60px] w-full resize-none bg-transparent px-4 py-[1.3rem] focus-within:outline-none sm:text-sm"
           autoFocus
           spellCheck={false}
