@@ -1,3 +1,6 @@
+# Agents Chatbot
+This is an example client (forked from [https://chat.vercel.ai/](https://chat.vercel.ai/) and server-side LiveKit agent that uses data channels instead of HTTP streaming for transferring chat data back and forth.
+
 ## Run the agent
 
 1. `cd server`
